@@ -1,0 +1,337 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0 ;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    background: transparent;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #FFC107;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav ul li:hover:after{
+    width: 100%;
+
+}
+section{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #FFC107;
+    text-transform: capitalize;
+}
+section h3{
+    font-size: 50px;
+    margin-top: 60px;
+}
+section p{
+    margin: 20px auto;
+    font-weight: 0;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #FFC107;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+Span{
+    
+        background:#FFC107;
+        height:100%;
+        width:0;
+        border-radius:25px;
+        position:absolute;
+        left:0;
+        bottom:0;
+        z-index:-1;
+        transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .content img{
+    height: auto;
+    width: 370px;
+    max-width: 100%;
+    margin-left: 240px;
+    margin-bottom: 10px;
+}
+.text{
+    width: 560px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+.content{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.text h1{
+    color: #ffcc74;
+    font-size: 85px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.text h5{
+    color: aliceblue;
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.text p{
+    color: #c0c4d6;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.card{
+    background: white;
+    width: 170px;
+    margin: 10px;
+    border-radius: 15px;
+    justify-content: center;
+
+}
+.card b{
+    color: rgba(255, 119, 0, 0.697);
+}
+.card p{
+    padding: 10px;
+    text-align: center;
+}
+.card h2{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
+.title{
+    color: #ffcc74;
+    font-size: 85px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: black;
+}
+.btn {
+    background-color: rgb(6, 4, 72);
+    text-align: center;
+    border-radius: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.btn a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-style: italic;
+}
+#ourservices{
+    background-color: black;
+    background: cover;
+}
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+#contactus{
+    background:black;
+}
+form{
+    margin: 0px;
+    padding: 0px;
+    position: relative; 
+    margin-top: 20%;
+    margin-left: 60%;
+    transform: translate(-75%, -45%);
+    font-family: 'Akshar', sans-serif;
+    font-weight: bold;
+    background-color:beige;
+    padding: 30px;
+    border-radius: 10px ;
+
+}
+form h1{
+    font-size: 20px;
+}
+form .sep{
+    width: 100%;
+    height: 1px;
+    background-color: #747cdf;
+}
+form .corps-form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+form .corps-form .boite{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corps-form .gauche .boite input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9 ;
+    outline-color: #747cdf;
+    border-radius: 5px;
+}
+form .corps-form .gauche .boite i{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+    color: #747cdf;
+}
+form .corps-form .droite{
+    margin-left: 40px;
+
+}
+form .corps-form .droite .boite{
+    height: 100%; 
+}
+form .corps-form .droite .boite textarea{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #747cdf;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 72%;
+}
+form .pied-form button{
+    margin-top: 10px;
+    background-color: #747cdf;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+form .pied-form button{
+    margin-top: 10px;
+    background-color: #747cdf;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+form .pied-form button:hover{
+    transform: scale(1.05);
+}
+footer h3{
+    font-weight: lighter;
+    font-size: 60px;
+    text-transform: capitalize;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 0;
+}
+.media{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-20%,-10%);
+}
+.media li{
+    list-style: none;
+    margin: 20px 30px;
+    display: block;
+    font-size: 45px;
+    color: black;
+    transition: .5s;
+}
+.media li a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #747cdf;
+}
